@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title> Feedback survey </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Datcu's survey form</h1>
+    <p id="description">Datcu's survey form: Thank you for taking the time to help us improve our services</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="name"> Name: </label>
+        <input id="name" type="text" required placeholder="Add your name..." />
+        <label id="email-label" for="email"> Email: </label>
+        <input id="email" type="email" required placeholder="Add your email..." />
+        <label id="number-label" for="number"> Number: </label>
+        <input id="number" type="number" min="13" max="120" placeholder="Add your number..." />
+      </fieldset>
+      <fieldset>
+        <select id="dropdown">
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+      </fieldset>
+      <fieldset required>
+        <label for="rb1" value="value1">
+          <input id="rb1" type="radio" name="name1" class="inline" value="value1" /> Radio button 1 </label>
+        <label for="rb2">
+          <input id="rb2" type="radio" name="name1" class="inline" value="value2"> Radio button 2 </label>
+      </fieldset>
+      <fieldset>
+        <label for="cb1" value="cbox">
+          <input id="cb1" type="checkbox" value="cbox" checked class="inline" /> Checkbox 1 </label>
+        <label for="cb2" value="cbox">
+          <input id="cb2" type="checkbox" value="cbox" class="inline" /> Checkbox 2 </label>
+      </fieldset>
+      <fieldset>
+        <label> Your feedback: <textarea id="textarea1" name="textarea1" value="txtarea" required placeholder="Provide your feedback here..."></textarea>
+      </fieldset>
+      <label for="submit">
+        <input id="submit" type="submit"> Submit </label>
+    </form>
+  </body>
+</html>
